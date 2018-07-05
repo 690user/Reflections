@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+git creates the .git hidden directory that holds all the repository
+history. we need that to have a version-control of the project.
+
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is the a middle zone between working directory and the repository.
+before repositing any files to the repository, we will move them to the stage area,
+and we'll use 'git status' to view which files there ready to go to the repository.
