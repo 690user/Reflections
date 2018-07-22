@@ -4,9 +4,34 @@ git creates the .git hidden directory that holds all the repository
 history. we need that to have a version-control of the project.
 
 
-
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 Staging area is the a middle zone between working directory and the repository.
 before repositing any files to the repository, we will move them to the stage area,
 and we'll use 'git status' to view which files there ready to go to the repository.
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+before we commit we will run 'git status', review all files that we added to the 
+staging area. if we're not sure about all changes that was made, we can run 
+(1)'git diff' for comparing [working directory VS staging area] OR 
+(2)'git diff --staged' for comparing [staging area VS recent commit]
+and than verify we're about to commit changes that equal to one logical change.
+
+What are some situations when branches would be helpful in keeping your history 
+organized? How would branches help?
+
+For example when we would want to add an experimental feature, or diffrent version
+that we dont want to commit further more to the master branch.
+
+
+How do the diagrams help you visualize the branch structure?
+
+Easier to see to what branch a commit belong. to point out an unreachable commit,
+if there's any. and to understand through what branch a given commit is reachable.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result contains the new added content in each commit relatively to thier old shared commit before they 
+branched. earses from that shared commit, even in one of them won't show up in the branch merge.
